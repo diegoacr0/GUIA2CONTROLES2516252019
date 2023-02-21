@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/twSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtPrecio"
+        app:layout_constraintStart_toStartOf="@+id/edtPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecio"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <EditText
+        android:id="@+id/edtPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Calcularprecio"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/edtPrecio"
+        app:layout_constraintStart_toStartOf="@+id/edtPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecio" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IVA 13%"
+        android:textColor="#3C6F9C"
+        app:layout_constraintEnd_toEndOf="@+id/edtPrecio"
+        app:layout_constraintStart_toStartOf="@+id/edtPrecio"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Precio"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
